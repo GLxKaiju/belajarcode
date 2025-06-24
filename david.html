@@ -10,7 +10,42 @@
 </head>
 
 <body>
-    <div class="container">hello</div>
+
+    <style>
+        .my-custom-row {
+            background-color: bisque;
+            height: 400px;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-2">col 1</div>
+            <div class="col-sm-12 col-md-6 col-lg-8">col 2</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 order-sm-2">col 1</div>
+            <div class="col-sm-6 order-sm-1">col 2</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 offset-2">col 1</div>
+            <div class="col-sm-4 offset-1">col 2</div>
+        </div>
+
+        <div class="row my-custom-row justify-content-center align-items-center">
+            <div class="col-sm-4"><div class="p-3 border bg-light">col 1</div></div>
+            <div class="col-sm-4"><div class="p-3 border bg-light">col 2</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col"><button type="button" class="btn btn-primary">Primary</button></div>
+            <div class="col"><button type="button" class="btn btn-secondary">Secondary</button></div>
+            <div class="col"><button type="button" class="btn btn-success">Success</button></div>
+            <div class="col"><button type="button" class="btn btn-danger">Danger</button></div>
+        </div>
+    </div>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
